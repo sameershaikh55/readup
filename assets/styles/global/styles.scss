@@ -6,34 +6,13 @@
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
 }
-
-// FONTS START
-// @font-face {
-//   font-family: Gotham Pro;
-//   src: url(../assets/fonts/GothamProRegular/GothamProRegular.ttf);
-// }
-
-// @font-face {
-//   font-family: Circe;
-//   src: url(../assets/fonts/circe-cufonfonts-webfont/CRC25.woff);
-// }
-
-// @font-face {
-//   font-family: GT Walsheim Pro;
-//   src: url(../assets/fonts/GTWalsheimPro/GTWalsheimPro.otf);
-// }
-
-// @font-face {
-//   font-family: Gilroy;
-//   src: url(../assets/fonts/Gilroy/Gilroy-ExtraBold.otf);
-// }
-// FONTS END
 
 // VARIABLES START
 $color1: #0f4152;
 $color2: #606060;
-$color3: #f5f5f5;
+$color3: #f0ecf4;
 $color4: #bababa;
 $color5: #2d2d2d;
 $color6: #3d3f45;
@@ -42,6 +21,7 @@ $color7: #f2f5fe;
 $color8: #cdcfd6;
 $color9: #eceef4;
 $color10: #44c6cb;
+$color11: #626262;
 // VARIABLES END
 
 // GLOBAL START
@@ -134,6 +114,10 @@ html {
   font-size: 1.5rem;
 }
 
+.f28 {
+  font-size: 1.75rem;
+}
+
 .f34 {
   font-size: 2.125rem;
 }
@@ -183,29 +167,89 @@ html {
 
 // COLORS
 .color1 {
-  color: $color1;
+  color: $color1 !important;
+}
+
+.bg_color1 {
+  background: $color1 !important;
 }
 
 .color2 {
-  color: $color2;
+  color: $color2 !important;
 }
 
-.color5 {
-  color: $color5;
+.bg_color2 {
+  background: $color2 !important;
 }
 
-.color6 {
-  color: $color6;
+.color3 {
+  color: $color3 !important;
+}
+
+.bg_color3 {
+  background: $color3 !important;
 }
 
 .color4 {
-  color: $color4;
+  color: $color4 !important;
+}
+
+.bg_color4 {
+  background: $color4 !important;
+}
+
+.color5 {
+  color: $color5 !important;
+}
+
+.bg_color5 {
+  background: $color5 !important;
+}
+
+.color6 {
+  color: $color6 !important;
+}
+
+.bg_color6 {
+  background: $color6 !important;
 }
 
 .color7 {
-  color: $color7;
+  color: $color7 !important;
+}
+
+.bg_color7 {
+  background: $color7 !important;
 }
 
 .color8 {
-  color: $color8;
+  color: $color8 !important;
+}
+
+.bg_color8 {
+  background: $color8 !important;
+}
+
+.color9 {
+  color: $color9 !important;
+}
+
+.bg_color9 {
+  background: $color9 !important;
+}
+
+.color10 {
+  color: $color10 !important;
+}
+
+.bg_color10 {
+  background: $color10 !important;
+}
+
+.color11 {
+  color: $color11 !important;
+}
+
+.bg_color11 {
+  background: $color11 !important;
 }
