@@ -264,10 +264,13 @@ html {
 
 button {
   transition: 1s;
-}
 
-button:hover {
-  transform: translateY(-3px);
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    transform: translateY(-3px);
+  }
 }
 
 details.custom-select {
@@ -370,19 +373,19 @@ details.custom-select {
     display: block;
     cursor: pointer;
   }
-}
 
-details.custom-select[open] summary:before {
-  content: "";
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  background: transparent;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
+  &[open] summary:before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 
-details.custom-select[open] {
-  z-index: 1;
+  &[open] {
+    z-index: 1;
+  }
 }

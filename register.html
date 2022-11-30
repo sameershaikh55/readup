@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <!-- CSS -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/styles/register/register.css" />
+    <!-- CSS -->
+    <title>Register - Herbrew</title>
+  </head>
+  <body>
+    <div class="register_container">
+      <div class="inner_register_container">
+        <!-- LANGUAGE CHANGER -->
+        <details class="custom-select">
+          <summary class="radios">
+            <input
+              type="radio"
+              name="item"
+              id="default"
+              title="עברית"
+              checked
+            />
+            <input type="radio" name="item" id="עברית" title="עברית" />
+            <input type="radio" name="item" id="English" title="English" />
+          </summary>
+          <ul class="list">
+            <li>
+              <label
+                class="d-flex align-items-center justify-content-between w-100"
+                for="עברית"
+              >
+                <a
+                  class="text-decoration-none text-white d-flex align-items-center justify-content-between w-100 rtl"
+                  href="register.html"
+                >
+                  עברית
+                </a>
+              </label>
+            </li>
+            <li>
+              <label
+                class="d-flex align-items-center justify-content-between w-100"
+                for="English"
+              >
+                <a
+                  class="text-decoration-none text-white d-flex align-items-center justify-content-between w-100"
+                  href="register.en.html"
+                >
+                  English
+                </a>
+              </label>
+            </li>
+          </ul>
+        </details>
+        <!-- LANGUAGE CHANGER -->
+
+        <div
+          class="d-flex flex-column justify-content-center align-items-center w-100 mt-4 mt-md-2"
+        >
+          <div>
+            <img src="./assets/images/logo.png" alt="" />
+          </div>
+          <h3 class="color1 mb-0 mt-4">יצירת חשבון חדש</h3>
+        </div>
+
+        <div class="form_container container-fluid mt-4">
+          <div class="row">
+            <div class="col-xl-8 mx-auto">
+              <div class="row gy-3 rtl">
+                <div class="col-12">
+                  <div class="selectdiv rtl">
+                    <label for="" class="w-100">
+                      <select class="w-100 rtl" name="משתמש פרטי" id="">
+                        <option value="משתמש פרטי">משתמש פרטי</option>
+                        <option value="משתמש פרטי">משתמש פרטי</option>
+                        <option value="משתמש פרטי">משתמש פרטי</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row align-items-center">
+                    <div class="col-6">
+                      <p class="mb-0 text-center">האם מנוי בספריה?</p>
+                    </div>
+                    <div class="col-6 organisation_container">
+                      <div class="row">
+                        <div class="col-6">
+                          <label for="כן">
+                            <input
+                              type="radio"
+                              name="האם מנוי בספריה?"
+                              id="כן"
+                            />
+                            כן
+                          </label>
+                        </div>
+                        <div class="col-6">
+                          <label for="לא">
+                            <input
+                              type="radio"
+                              name="האם מנוי בספריה?"
+                              id="לא"
+                            />
+                            לא
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <input
+                    class="w-100"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="מס׳ מנוי בספרייה"
+                  />
+                </div>
+                <div class="col-12">
+                  <input
+                    class="w-100"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="שם פרטי"
+                  />
+                </div>
+                <div class="col-12">
+                  <input
+                    class="w-100"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="שם משפחה"
+                  />
+                </div>
+                <div class="col-12">
+                  <input
+                    class="w-100"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="מייל"
+                  />
+                </div>
+                <div class="col-12">
+                  <input
+                    class="w-100"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="סיסמא"
+                  />
+                </div>
+                <div class="col-12">
+                  <input
+                    class="w-100"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="סיסמא (שוב)"
+                  />
+                </div>
+                <div class="col-6 d-flex align-items-center gap-1 mt-3">
+                  <input type="checkbox" name="" />
+                  <p class="mb-0 f12 color11 pt-1">אני מסכימ/ה לתנאי השימוש</p>
+                </div>
+                <div class="col-6 mt-3">
+                  <button
+                    class="w-100 bg_color1 text-white border-0 py-3 rounded-pill"
+                  >
+                    הרשמה
+                  </button>
+                </div>
+                <div class="col-12 mt-4">
+                  <hr />
+
+                  <div class="d-flex gap-1 justify-content-center">
+                    <p class="color11 mb-0 f14">כבר יש לך חשבון?</p>
+                    <a class="color1 fw800 f14" href="">לכניסה</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

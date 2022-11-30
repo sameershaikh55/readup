@@ -383,4 +383,120 @@ details.custom-select[open] summary:before {
 details.custom-select[open] {
   z-index: 1;
 }
-/*# sourceMappingURL=styles.css.map */
+
+.register_container {
+  background: #f0ecf4;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register_container .inner_register_container {
+  min-width: 644px;
+  max-width: 644px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.8rem 1.4rem 2rem 1.4rem;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 52px #d3d3d3;
+          box-shadow: 0px 2px 52px #d3d3d3;
+  border-radius: 10px;
+}
+
+.register_container .inner_register_container .form_container select,
+.register_container .inner_register_container .form_container input {
+  background: #ffffff;
+  border: 1px solid #cdcfd6;
+  border-radius: 10px;
+  padding: 0.9rem 1.8rem;
+  color: #626262;
+}
+
+.register_container .inner_register_container .form_container select:focus,
+.register_container .inner_register_container .form_container input:focus {
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: #0f4152;
+}
+
+.register_container .inner_register_container .form_container select {
+  padding: 0.95rem 1.8rem 0.9rem 1.8rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.register_container .inner_register_container .form_container .selectdiv {
+  position: relative;
+}
+
+.register_container .inner_register_container .form_container .selectdiv::after {
+  content: url("../../icons/downArrow.svg");
+  font: 17px "Consolas", monospace;
+  color: #333;
+  right: 20px;
+  top: 18px;
+  padding: 0 0 2px;
+  position: absolute;
+  pointer-events: none;
+}
+
+.register_container .inner_register_container .form_container .selectdiv.rtl::after {
+  left: 20px;
+  right: auto;
+}
+
+.register_container .inner_register_container .form_container .organisation_container label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  border: 1px solid #cdcfd6;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  cursor: pointer;
+}
+
+.register_container .inner_register_container .form_container .organisation_container label input[type="radio"] {
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+}
+
+.register_container .inner_register_container .form_container .organisation_container label:focus-within {
+  border: 2px solid #0f4152;
+}
+
+@media screen and (max-width: 768px) {
+  .register_container .inner_register_container {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+  }
+  .register_container
+.inner_register_container
+.form_container
+.selectdiv::after {
+    top: 12px;
+  }
+  .register_container .inner_register_container .form_container input {
+    padding: 0.95rem 1.8rem 0.8rem 1.8rem;
+  }
+}
+/*# sourceMappingURL=register.css.map */
