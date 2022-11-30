@@ -243,6 +243,143 @@ html {
   background: #626262 !important;
 }
 
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+button {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+button:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+details.custom-select {
+  position: relative;
+  width: 120px;
+  /* FAKE SELECT */
+}
+
+details.custom-select summary {
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid #0f4152;
+  list-style: none;
+  color: #0f4152;
+}
+
+details.custom-select summary::-webkit-details-marker {
+  display: none;
+}
+
+details.custom-select summary:after {
+  content: url("../../icons/downArrow.svg");
+  display: inline-block;
+  float: right;
+}
+
+details.custom-select summary.rtl:after {
+  content: url("../../icons/downArrow.svg");
+  display: inline-block;
+  float: left;
+}
+
+details.custom-select summary:focus {
+  outline: none;
+}
+
+details.custom-select ul {
+  list-style: none;
+  width: 100%;
+  background: #0f4152;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  padding: 1rem;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+details.custom-select li {
+  margin: 0;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #0f4152;
+}
+
+details.custom-select li:first-child {
+  padding-top: 0;
+}
+
+details.custom-select li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+details.custom-select summary.radios {
+  counter-reset: radios;
+}
+
+details.custom-select input[type="radio"] {
+  counter-increment: radios;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: none;
+}
+
+details.custom-select input[type="radio"]:checked {
+  display: inline;
+}
+
+details.custom-select input[type="radio"]:after {
+  content: attr(title);
+  display: inline;
+  font-size: 1rem;
+  color: #0f4152;
+  margin-right: 0.5rem;
+}
+
+details.custom-select summary.rtl input[type="radio"]:after {
+  margin-right: 0rem;
+}
+
+details.custom-select ul.list {
+  counter-reset: labels;
+}
+
+details.custom-select label {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+details.custom-select[open] summary:before {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+details.custom-select[open] {
+  z-index: 1;
+}
+
 .login_container {
   display: -webkit-box;
   display: -ms-flexbox;

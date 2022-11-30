@@ -25,7 +25,51 @@
     <div class="login_container">
       <div class="form_container">
         <div class="d-flex justify-content-between">
-          <p class="mb-0">English</p>
+          <div>
+            <!-- LANGUAGE CHANGER -->
+            <details class="custom-select">
+              <summary class="radios">
+                <input
+                  type="radio"
+                  name="item"
+                  id="default"
+                  title="English"
+                  checked
+                />
+                <input type="radio" name="item" id="עברית" title="עברית" />
+                <input type="radio" name="item" id="English" title="English" />
+              </summary>
+              <ul class="list">
+                <li>
+                  <label
+                    class="d-flex align-items-center justify-content-between w-100"
+                    for="עברית"
+                  >
+                    <a
+                      class="text-decoration-none text-white d-flex align-items-center justify-content-between w-100 rtl"
+                      href="index.html"
+                    >
+                      עברית
+                    </a>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    class="d-flex align-items-center justify-content-between w-100"
+                    for="English"
+                  >
+                    <a
+                      class="text-decoration-none text-white d-flex align-items-center justify-content-between w-100"
+                      href="index.en.html"
+                    >
+                      English
+                    </a>
+                  </label>
+                </li>
+              </ul>
+            </details>
+            <!-- LANGUAGE CHANGER -->
+          </div>
 
           <button
             class="d-flex align-items-center bg-transparent border-0 gap-2"
@@ -64,7 +108,9 @@
                 <p class="mb-0 f12 color11 pt-1">Keep me logged</p>
               </div>
               <div class="col-6 mt-4">
-                <button class="w-100 bg_color1 text-white border-0">Log in</button>
+                <button class="w-100 bg_color1 text-white border-0">
+                  Log in
+                </button>
               </div>
               <div class="col-6"></div>
               <div class="col-6">

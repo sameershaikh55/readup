@@ -22,6 +22,139 @@
     <title>Login - Herbrew</title>
   </head>
   <body>
+    <div class="login_container">
+      <div class="form_container d-flex flex-column justify-content-between">
+        <div>
+          <div class="d-flex justify-content-between">
+            <div>
+              <!-- LANGUAGE CHANGER -->
+              <details class="custom-select">
+                <summary class="radios rtl">
+                  <input
+                    type="radio"
+                    name="item"
+                    id="default"
+                    title="עברית"
+                    checked
+                  />
+                  <input type="radio" name="item" id="עברית" title="עברית" />
+                  <input
+                    type="radio"
+                    name="item"
+                    id="English"
+                    title="English"
+                  />
+                </summary>
+                <ul class="list">
+                  <li>
+                    <label
+                      class="d-flex align-items-center justify-content-between w-100 rtl"
+                      for="עברית"
+                    >
+                      <a
+                        class="text-decoration-none text-white d-flex align-items-center justify-content-between w-100"
+                        href="index.html"
+                      >
+                        עברית
+                      </a>
+                    </label>
+                  </li>
+                  <li>
+                    <label
+                      class="d-flex align-items-center justify-content-between w-100"
+                      for="English"
+                    >
+                      <a
+                        class="text-decoration-none text-white d-flex align-items-center justify-content-between w-100"
+                        href="index.en.html"
+                      >
+                        English
+                      </a>
+                    </label>
+                  </li>
+                </ul>
+              </details>
+              <!-- LANGUAGE CHANGER -->
+            </div>
+
+            <button
+              class="d-flex align-items-center bg-transparent border-0 gap-2"
+            >
+              <img src="./assets/icons/accessibility.svg" />
+              <p class="mb-0 color1 text-decoration-underline f14">
+                Accessibility statement
+              </p>
+            </button>
+          </div>
+
+          <div class="d-flex justify-content-center mt-5">
+            <img src="./assets/images/logo.png" />
+          </div>
+
+          <h2 class="text-center mt-5 mb-0 f28 fw700 color1">ברוכים הבאים</h2>
+          <p class="text-center fw600 color1 f22">כניסה למערכת</p>
+
+          <div class="login_form_inputs mt-5">
+            <div class="container-fluid">
+              <div class="row gy-2 rtl">
+                <div class="col-12">
+                  <input
+                    class="w-100 rtl"
+                    type="text"
+                    name=""
+                    placeholder="כתובת מייל"
+                  />
+                </div>
+                <div class="col-12">
+                  <input
+                    class="w-100 rtl"
+                    type="text"
+                    name=""
+                    placeholder="סיסמא"
+                  />
+                </div>
+
+                <div class="col-6 d-flex align-items-center gap-1 mt-4">
+                  <input type="checkbox" name="" />
+                  <p class="mb-0 f12 color11 pt-1">השאר אותי מחובר/ת</p>
+                </div>
+                <div class="col-6 mt-4">
+                  <button class="w-100 bg_color1 text-white border-0">
+                    כניסה
+                  </button>
+                </div>
+                <div class="col-6"></div>
+                <div class="col-6">
+                  <div class="text-center mt-1">
+                    <a class="color11 f14" href="">שכחתי סיסמא</a>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-5">
+                  <hr />
+
+                  <div class="d-flex gap-1 justify-content-center">
+                    <p class="color11 mb-0 f14">אין לך חשבון? אנא</p>
+                    <a class="color1 fw800 f14" href="">הרשמ/י</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p
+          class="text-decoration-underline d-flex justify-content-center gap-2 color1"
+        >
+          <img src="./assets/icons/accessibility.svg" alt="" />
+          הצהרת נגישות
+        </p>
+      </div>
+      <div class="image_container d-none d-sm-block">
+        <img src="./assets/images/login.png" />
+      </div>
+    </div>
+
     <!-- SCRIPT -->
     <!-- JavaScript Bundle with Popper -->
     <script
