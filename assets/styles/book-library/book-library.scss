@@ -77,6 +77,10 @@
       font-weight: 500;
     }
 
+    select.rtl {
+      padding-right: 1.5rem;
+    }
+
     .selectdiv {
       width: 100%;
       position: relative;
@@ -120,11 +124,21 @@
         }
       }
 
+      input.rtl {
+        padding-right: 1.5rem;
+        padding-left: 2.5rem;
+      }
+
       img {
         position: absolute;
         top: 50%;
         right: 20px;
         transform: translateY(-50%);
+      }
+
+      img.rtl {
+        left: 20px;
+        right: auto;
       }
     }
 

@@ -595,6 +595,10 @@ details.custom-select.light[open] {
   font-weight: 500;
 }
 
+.search_container .search_fields select.rtl {
+  padding-right: 1.5rem;
+}
+
 .search_container .search_fields .selectdiv {
   width: 100%;
   position: relative;
@@ -640,12 +644,22 @@ details.custom-select.light[open] {
   outline-color: #0f4152;
 }
 
+.search_container .search_fields .inp_container input.rtl {
+  padding-right: 1.5rem;
+  padding-left: 2.5rem;
+}
+
 .search_container .search_fields .inp_container img {
   position: absolute;
   top: 50%;
   right: 20px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.search_container .search_fields .inp_container img.rtl {
+  left: 20px;
+  right: auto;
 }
 
 .search_container .search_fields .search_btn {
