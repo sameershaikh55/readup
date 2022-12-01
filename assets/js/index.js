@@ -44,3 +44,26 @@ for (index = 0; index < l; ++index) {
   images[index].setAttribute("alt", altAttribute);
 }
 // ADDING ALT TO IMAGE TAG
+
+// REST ALL
+const userType = (type) => {
+  if (type === "Private user") {
+    document.getElementById("privat-user").style.display = "block";
+    document.getElementById("organisation").style.display = "none";
+  } else {
+    document.getElementById("privat-user").style.display = "none";
+    document.getElementById("organisation").style.display = "block";
+  }
+};
+
+const userSubscription = (type) => {
+  if (type === "YES") {
+    document.getElementById("subscription_message").style.display = "none";
+    document.getElementById("not_organisation").style.display = "block";
+    document.querySelector(".focus").classList.remove("focus");
+  } else {
+    document.getElementById("subscription_message").style.display = "block";
+    document.getElementById("not_organisation").style.display = "none";
+  }
+};
+// REST ALL

@@ -251,16 +251,16 @@ html {
   direction: ltr;
 }
 
-button {
+button:not([disabled]) {
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-button:focus {
+button:not([disabled]):focus {
   outline: none;
 }
 
-button:hover {
+button:not([disabled]):hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }
@@ -433,6 +433,11 @@ details.custom-select[open] {
   appearance: none;
 }
 
+.register_container .inner_register_container .form_container select:focus {
+  color: #0f4152;
+  font-weight: 500;
+}
+
 .register_container .inner_register_container .form_container .selectdiv {
   position: relative;
 }
@@ -471,6 +476,7 @@ details.custom-select[open] {
   text-align: center;
   height: 50px;
   cursor: pointer;
+  color: #979797;
 }
 
 .register_container .inner_register_container .form_container .organisation_container label input[type="radio"] {
@@ -479,8 +485,21 @@ details.custom-select[open] {
   height: 0px;
 }
 
+.register_container .inner_register_container .form_container .organisation_container label.focus {
+  border: 2px solid #0f4152;
+  color: #0f4152;
+  font-weight: 500;
+}
+
 .register_container .inner_register_container .form_container .organisation_container label:focus-within {
   border: 2px solid #0f4152;
+  color: #0f4152;
+  font-weight: 500;
+}
+
+.register_container .inner_register_container .form_container .special_message {
+  background: rgba(213, 228, 234, 0.677584);
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {

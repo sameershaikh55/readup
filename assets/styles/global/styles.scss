@@ -262,7 +262,7 @@ html {
   direction: ltr;
 }
 
-button {
+button:not([disabled]) {
   transition: 1s;
 
   &:focus {

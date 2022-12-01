@@ -83,78 +83,217 @@
               <div class="row gy-3">
                 <div class="col-12">
                   <div class="selectdiv">
-                    <label for="" class="w-100">
-                      <select class="w-100" name="Organisation" id="">
-                        <option value="Organisation 1">Organisation 1</option>
-                        <option value="Organisation 2">Organisation 2</option>
-                        <option value="Organisation 3">Organisation 3</option>
+                    <label class="w-100">
+                      <select
+                        onchange="userType(this.value)"
+                        class="w-100"
+                        id=""
+                      >
+                        <option value="Organisation">Organisation</option>
+                        <option value="Private user">Private user</option>
                       </select>
                     </label>
                   </div>
                 </div>
-                <div class="col-12">
-                  <input
-                    class="w-100"
-                    type="text"
-                    name=""
-                    id=""
-                    placeholder="Organisation name"
-                  />
+
+                <div style="display: none" id="privat-user" class="col-12">
+                  <div class="row gy-3">
+                    <div class="col-6 mt-3 color11">
+                      <p class="mb-0 f14 color11">
+                        Do you have a <br />
+                        Library subscription?
+                      </p>
+                    </div>
+                    <div class="col-6 organisation_container mt-3">
+                      <div class="row gx-3">
+                        <div class="col-6">
+                          <label class="focus" for="NO">
+                            <input
+                              onchange="userSubscription(this.id)"
+                              type="radio"
+                              name="Do you have a Library subscription?"
+                              id="NO"
+                            />
+                            NO
+                          </label>
+                        </div>
+                        <div class="col-6">
+                          <label for="YES">
+                            <input
+                              onchange="userSubscription(this.id)"
+                              type="radio"
+                              name="Do you have a Library subscription?"
+                              id="YES"
+                            />
+                            YES
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="subscription_message" class="col-12 mt-4">
+                      <div class="special_message">
+                        <div class="container-fluid p-3">
+                          <div class="row">
+                            <div class="col-7 pe-0">
+                              <p class="f14 mb-0 color1 fw500">
+                                We’re Sorry.. in order to access the book
+                                database, you must establish a subscription at
+                                the
+                                <span class="text-decoration-underline">
+                                  The Central Library for the Blind, Visually
+                                  Impaired and Handicapped.
+                                </span>
+                                After the subscription is approved, please log
+                                in again.
+                              </p>
+                            </div>
+                            <div class="col-5 ps-0 pe-1">
+                              <img
+                                class="w-100"
+                                src="./assets/images/special_message.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      style="display: none"
+                      id="not_organisation"
+                      class="col-12"
+                    >
+                      <div class="row gy-3">
+                        <div class="col-12">
+                          <input
+                            class="w-100"
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="library number id"
+                          />
+                        </div>
+                        <div class="col-12">
+                          <input
+                            class="w-100"
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="First name"
+                          />
+                        </div>
+                        <div class="col-12">
+                          <input
+                            class="w-100"
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="Surname"
+                          />
+                        </div>
+                        <div class="col-12">
+                          <input
+                            class="w-100"
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="E-mail"
+                          />
+                        </div>
+                        <div class="col-12">
+                          <input
+                            class="w-100"
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="Password"
+                          />
+                        </div>
+                        <div class="col-12">
+                          <input
+                            class="w-100"
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="Password  (again)"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
                 </div>
-                <div class="col-12">
-                  <input
-                    class="w-100"
-                    type="text"
-                    name=""
-                    id=""
-                    placeholder="Job"
-                  />
+
+                <div id="organisation" class="col-12">
+                  <div class="row gy-3">
+                    <div class="col-12">
+                      <input
+                        class="w-100"
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Organisation name"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <input
+                        class="w-100"
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Job"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <input
+                        class="w-100"
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="First name"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <input
+                        class="w-100"
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Surname"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <input
+                        class="w-100"
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="E-mail"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <input
+                        class="w-100"
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Password"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <input
+                        class="w-100"
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Password  (again)"
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div class="col-12">
-                  <input
-                    class="w-100"
-                    type="text"
-                    name=""
-                    id=""
-                    placeholder="First name"
-                  />
-                </div>
-                <div class="col-12">
-                  <input
-                    class="w-100"
-                    type="text"
-                    name=""
-                    id=""
-                    placeholder="Surname"
-                  />
-                </div>
-                <div class="col-12">
-                  <input
-                    class="w-100"
-                    type="text"
-                    name=""
-                    id=""
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="col-12">
-                  <input
-                    class="w-100"
-                    type="text"
-                    name=""
-                    id=""
-                    placeholder="Password"
-                  />
-                </div>
-                <div class="col-12">
-                  <input
-                    class="w-100"
-                    type="text"
-                    name=""
-                    id=""
-                    placeholder="Password  (again)"
-                  />
-                </div>
+
                 <div class="col-6 d-flex align-items-center gap-1 mt-3">
                   <input type="checkbox" name="" />
                   <p class="mb-0 f12 color11 pt-1">

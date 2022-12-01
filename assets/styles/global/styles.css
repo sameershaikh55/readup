@@ -251,16 +251,16 @@ html {
   direction: ltr;
 }
 
-button {
+button:not([disabled]) {
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-button:focus {
+button:not([disabled]):focus {
   outline: none;
 }
 
-button:hover {
+button:not([disabled]):hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }
