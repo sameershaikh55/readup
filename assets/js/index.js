@@ -11,9 +11,11 @@ const falseToEveryTag = () => {
 falseToEveryTag();
 
 for (index = 0; index < l; ++index) {
+  // console.log(this.id);
+
   clickedBtn[index].onclick = function () {
     falseToEveryTag();
-    this.setAttribute("aria-pressed", "true");
+    clickedBtn[index].setAttribute("aria-pressed", "true");
   };
 }
 // ADDING PRESSED ATTRIBUTE
@@ -64,6 +66,14 @@ const userSubscription = (type) => {
   } else {
     document.getElementById("subscription_message").style.display = "block";
     document.getElementById("not_organisation").style.display = "none";
+  }
+};
+
+const sidebar = (type) => {
+  if (type === "hamburger") {
+    document.querySelector(".sidebar_container").style.top = "0%";
+  } else {
+    document.querySelector(".sidebar_container").style.top = "-100%";
   }
 };
 // REST ALL

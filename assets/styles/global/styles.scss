@@ -62,6 +62,10 @@ html {
   }
 }
 
+body {
+  background-color: $color3 !important;
+}
+
 .assistant {
   font-family: "Assistant", sans-serif;
 }
@@ -273,6 +277,14 @@ button:not([disabled]) {
   }
 }
 
+.page_container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0rem 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 details.custom-select {
   position: relative;
   width: 120px;
@@ -357,6 +369,123 @@ details.custom-select {
     display: inline;
     font-size: 1rem;
     color: $color1;
+    margin-right: 0.5rem;
+  }
+
+  summary.rtl input[type="radio"]:after {
+    margin-right: 0rem;
+  }
+
+  ul.list {
+    counter-reset: labels;
+  }
+
+  label {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+  }
+
+  &[open] summary:before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  &[open] {
+    z-index: 1;
+  }
+}
+
+details.custom-select.light {
+  position: relative;
+  width: 120px;
+
+  summary {
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid $color3;
+    list-style: none;
+    color: $color3;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary:after {
+    content: url("../../icons/downArrow-light.svg");
+    display: inline-block;
+    float: right;
+  }
+
+  summary.rtl:after {
+    content: url("../../icons/downArrow-light.svg");
+    display: inline-block;
+    float: left;
+  }
+
+  summary:focus {
+    outline: none;
+  }
+
+  ul {
+    list-style: none;
+    width: 100%;
+    background: $color1;
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    padding: 1rem;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  li {
+    margin: 0;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid $color1;
+  }
+
+  li:first-child {
+    padding-top: 0;
+  }
+
+  li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  /* FAKE SELECT */
+
+  summary.radios {
+    counter-reset: radios;
+  }
+
+  input[type="radio"] {
+    counter-increment: radios;
+    appearance: none;
+    display: none;
+  }
+
+  input[type="radio"]:checked {
+    display: inline;
+  }
+
+  input[type="radio"]:after {
+    content: attr(title);
+    display: inline;
+    font-size: 1rem;
+    color: $color3;
     margin-right: 0.5rem;
   }
 
