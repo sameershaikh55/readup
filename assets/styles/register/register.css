@@ -515,6 +515,47 @@ details.custom-select.light[open] {
   z-index: 1;
 }
 
+.header_container {
+  background: #0f4152;
+  height: 66px;
+  position: relative;
+}
+
+.header_container .profile,
+.header_container .access {
+  position: absolute;
+}
+
+.header_container .profile {
+  left: 15px;
+}
+
+.header_container .access {
+  right: 15px;
+}
+
+.header_container .inner_header_container {
+  position: relative;
+}
+
+.header_container .inner_header_container .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.sidebar_container {
+  background: #0f4152;
+  height: 66px;
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .register_container {
   background: #f0ecf4;
   min-height: 100vh;

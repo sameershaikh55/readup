@@ -518,3 +518,42 @@ details.custom-select.light {
     z-index: 1;
   }
 }
+
+.header_container {
+  background: #0f4152;
+  height: 66px;
+  position: relative;
+
+  .profile,
+  .access {
+    position: absolute;
+  }
+
+  .profile {
+    left: 15px;
+  }
+
+  .access {
+    right: 15px;
+  }
+
+  .inner_header_container {
+    position: relative;
+
+    .logo {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.sidebar_container {
+  background: #0f4152;
+  height: 66px;
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  transition: 0.5s;
+}
