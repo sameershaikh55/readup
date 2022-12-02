@@ -285,6 +285,10 @@ button:not([disabled]) {
   margin-right: auto;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 details.custom-select {
   position: relative;
   width: 120px;
